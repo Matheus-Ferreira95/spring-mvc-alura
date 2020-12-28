@@ -1,0 +1,27 @@
+2020-12-28 14:23:26,076 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-12-28 14:23:33,011 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-12-28 14:32:37,419 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.matheusf:mvc:0.0.1-SNAPSHOT @ C:\Users\mathe\Projects\spring-mvc-alura\mvc\pom.xml.
+2020-12-28 14:32:38,676 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1.pom
+2020-12-28 14:32:39,030 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1.pom
+2020-12-28 14:32:40,571 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1.jar
+2020-12-28 14:32:40,787 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1.jar
+2020-12-28 14:32:44,883 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mvc/src/main/java
+2020-12-28 14:32:44,885 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mvc/src/main/resources
+2020-12-28 14:32:44,895 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mvc/src/main/resources
+2020-12-28 14:32:44,910 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mvc/src/test/java
+2020-12-28 14:32:44,955 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1-sources.jar
+2020-12-28 14:32:45,330 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.4.1/spring-boot-starter-thymeleaf-2.4.1-sources.jar
+2020-12-28 14:32:45,450 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-thymeleaf:2.4.1
+2020-12-28 14:32:47,311 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 14 sec
+2020-12-28 14:32:47,314 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-12-28 14:32:47,940 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.matheusf:mvc:0.0.1-SNAPSHOT @ C:\Users\mathe\Projects\spring-mvc-alura\mvc\pom.xml.
+2020-12-28 14:32:49,211 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mvc/src/main/java
+2020-12-28 14:32:49,212 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mvc/src/main/resources
+2020-12-28 14:32:49,213 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mvc/src/main/resources
+2020-12-28 14:32:49,214 [Worker-1: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mvc/src/test/java
+2020-12-28 14:32:49,771 [Worker-1: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2020-12-28 14:32:50,899 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-28 14:32:50,899 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2020-12-28 14:32:50,905 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-28 14:32:50,920 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-28 14:32:50,920 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
