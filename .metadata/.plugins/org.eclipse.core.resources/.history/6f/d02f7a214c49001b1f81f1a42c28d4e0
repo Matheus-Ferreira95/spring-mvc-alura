@@ -1,0 +1,5 @@
+package com.matheusf.mvc.repository;
+
+public class PedidoRepository {
+
+}

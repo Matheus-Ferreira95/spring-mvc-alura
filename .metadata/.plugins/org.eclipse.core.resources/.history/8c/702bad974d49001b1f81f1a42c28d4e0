@@ -1,0 +1,5 @@
+package com.matheusf.mvc.service;
+
+public class PedidoService {
+
+}
