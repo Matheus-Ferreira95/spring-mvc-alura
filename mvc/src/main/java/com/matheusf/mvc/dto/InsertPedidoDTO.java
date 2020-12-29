@@ -3,6 +3,7 @@ package com.matheusf.mvc.dto;
 import javax.validation.constraints.NotBlank;
 
 import com.matheusf.mvc.model.Pedido;
+import com.matheusf.mvc.model.StatusPedido;
 
 public class InsertPedidoDTO {
 
@@ -54,6 +55,7 @@ public class InsertPedidoDTO {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlImagem(urlImagem);
 		pedido.setUrlProduto(urlProduto);
+		pedido.setStatus(StatusPedido.AGUARDANDO);
 		return pedido;
 	}	
 }
