@@ -1,0 +1,5 @@
+package com.matheusf.mvc.dto;
+
+public class InsertPedidoDTO {
+
+}

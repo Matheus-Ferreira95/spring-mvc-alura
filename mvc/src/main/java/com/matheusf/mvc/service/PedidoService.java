@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.matheusf.mvc.model.Pedido;
 import com.matheusf.mvc.repository.PedidoRepository;
@@ -17,4 +18,10 @@ public class PedidoService {
 	public List<Pedido> findAll(){
 		return pedidoRepository.findAll();
 	}
+	
+	@Transactional
+	public void insert(Pedido pedido) {
+		pedidoRepository.save(pedido);
+	}
+	
 }
