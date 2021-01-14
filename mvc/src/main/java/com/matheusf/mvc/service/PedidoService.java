@@ -16,8 +16,9 @@ public class PedidoService {
 	@Autowired
 	private PedidoRepository pedidoRepository;
 	
-	public List<Pedido> findAll(){
-		return pedidoRepository.findAll();
+	@Transactional(readOnly = true)
+	public List<Pedido> findAllByUsuario(String username){
+		return pedidoRepository.findAllByUsuario(username);
 	}
 	
 	@Transactional
@@ -27,6 +28,5 @@ public class PedidoService {
 
 	public List<Pedido> findByStatus(StatusPedido aguardando) {
 		return pedidoRepository.findByStatus(aguardando);
-	}
-	
+	}	
 }
