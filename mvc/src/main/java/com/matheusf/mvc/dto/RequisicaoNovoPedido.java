@@ -5,7 +5,7 @@ import javax.validation.constraints.NotBlank;
 import com.matheusf.mvc.model.Pedido;
 import com.matheusf.mvc.model.StatusPedido;
 
-public class InsertPedidoDTO {
+public class RequisicaoNovoPedido {
 
 	@NotBlank
 	private String nomeProduto;

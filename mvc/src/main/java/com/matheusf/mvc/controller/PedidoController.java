@@ -8,9 +8,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.matheusf.mvc.dto.InsertPedidoDTO;
+import com.matheusf.mvc.dto.RequisicaoNovoPedido;
 import com.matheusf.mvc.model.Pedido;
 import com.matheusf.mvc.service.PedidoService;
 
@@ -21,28 +20,21 @@ public class PedidoController {
 	@Autowired
 	private PedidoService pedidoService;
 	
-	@GetMapping(value = "/formulario")
-	public ModelAndView formulario(InsertPedidoDTO pedidoDTO) {
-		ModelAndView mv = new ModelAndView("pedido/formulario");
-		return mv;
+	@GetMapping("formulario") 
+	public String formulario(RequisicaoNovoPedido requisicao) {
+		return "pedido/formulario";
 	}
 	
-	@GetMapping(value = "/novo")
-	public ModelAndView getFormulario(InsertPedidoDTO pedidoDTO) {
-		ModelAndView mv = new ModelAndView("pedido/formulario");
-		return mv;
-	}
-	
-	@PostMapping(value = "/novo")
-	public ModelAndView novo(@Valid InsertPedidoDTO pedidoDTO, BindingResult result) {
+	@PostMapping("novo")
+	public String novo(@Valid RequisicaoNovoPedido requisicao, BindingResult result) {
 		if(result.hasErrors()) {
-			return new ModelAndView("pedido/formulario");
+			return "pedido/formulario";
 		}
 		
-		Pedido pedido = pedidoDTO.toPedido();
+		Pedido pedido = requisicao.toPedido();
 		pedidoService.insert(pedido);
-	
-		return new ModelAndView("redirect:/home");
+		
+		return "redirect:/home";
 	}
 	
 }
