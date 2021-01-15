@@ -3,6 +3,7 @@ package com.matheusf.mvc.controller;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.matheusf.mvc.dto.RequisicaoNovoPedido;
 import com.matheusf.mvc.model.Pedido;
+import com.matheusf.mvc.model.User;
+import com.matheusf.mvc.repository.UserRepository;
 import com.matheusf.mvc.service.PedidoService;
 
 @Controller
@@ -19,6 +22,9 @@ public class PedidoController {
 	
 	@Autowired
 	private PedidoService pedidoService;
+	
+	@Autowired
+	private UserRepository userRepository;
 	
 	@GetMapping("formulario") 
 	public String formulario(RequisicaoNovoPedido requisicao) {
@@ -31,10 +37,12 @@ public class PedidoController {
 			return "pedido/formulario";
 		}
 		
-		Pedido pedido = requisicao.toPedido();
-		pedidoService.insert(pedido);
+		String username = SecurityContextHolder.getContext().getAuthentication().getName();
+		User user = userRepository.findByUsername(username);
 		
+		Pedido pedido = requisicao.toPedido();
+		pedido.setUser(user);
+		pedidoService.insert(pedido);		
 		return "redirect:/home";
-	}
-	
+	}	
 }

@@ -28,5 +28,13 @@ public class PedidoService {
 
 	public List<Pedido> findByStatus(StatusPedido aguardando) {
 		return pedidoRepository.findByStatus(aguardando);
+	}
+
+	public List<Pedido> findByStatusAndUsuario(String username, StatusPedido status) {
+		return pedidoRepository.findByStatusAndUsuario(username, status);
+	}
+
+	public List<Pedido> findAll() {
+		return pedidoRepository.findAll();
 	}	
 }
